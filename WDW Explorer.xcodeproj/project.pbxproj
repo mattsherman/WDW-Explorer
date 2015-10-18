@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9E247251BD4291600DC52CD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C9E247241BD4291600DC52CD /* README.md */; settings = {ASSET_TAGS = (); }; };
 		C9FEAE131BCF86DC002A52A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAE121BCF86DC002A52A7 /* AppDelegate.swift */; };
-		C9FEAE151BCF86DC002A52A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAE141BCF86DC002A52A7 /* ViewController.swift */; };
 		C9FEAE181BCF86DC002A52A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FEAE161BCF86DC002A52A7 /* Main.storyboard */; };
 		C9FEAE1A1BCF86DC002A52A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9FEAE191BCF86DC002A52A7 /* Assets.xcassets */; };
 		C9FEAE1D1BCF86DC002A52A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FEAE1B1BCF86DC002A52A7 /* LaunchScreen.storyboard */; };
 		C9FEAE281BCF86DC002A52A7 /* WDW_ExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAE271BCF86DC002A52A7 /* WDW_ExplorerTests.swift */; };
+		C9FEAE331BCF8BBE002A52A7 /* AttractionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAE321BCF8BBE002A52A7 /* AttractionModel.swift */; settings = {ASSET_TAGS = (); }; };
+		C9FEAE371BCF8C9A002A52A7 /* AttractionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAE361BCF8C9A002A52A7 /* AttractionTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C9FEAE391BD006D3002A52A7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAE381BD006D3002A52A7 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		C9FEAE3B1BD00754002A52A7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAE3A1BD00754002A52A7 /* DataManager.swift */; settings = {ASSET_TAGS = (); }; };
+		C9FEAE3F1BD02AA7002A52A7 /* AttractionDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAE3E1BD02AA7002A52A7 /* AttractionDetailTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C9FEAE411BD38B2D002A52A7 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEAE401BD38B2D002A52A7 /* NavigationController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9E247241BD4291600DC52CD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C9FEAE0F1BCF86DC002A52A7 /* WDW Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WDW Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FEAE121BCF86DC002A52A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9FEAE141BCF86DC002A52A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9FEAE171BCF86DC002A52A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9FEAE191BCF86DC002A52A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9FEAE1C1BCF86DC002A52A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,12 @@
 		C9FEAE231BCF86DC002A52A7 /* WDW ExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WDW ExplorerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FEAE271BCF86DC002A52A7 /* WDW_ExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDW_ExplorerTests.swift; sourceTree = "<group>"; };
 		C9FEAE291BCF86DC002A52A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FEAE321BCF8BBE002A52A7 /* AttractionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionModel.swift; sourceTree = "<group>"; };
+		C9FEAE361BCF8C9A002A52A7 /* AttractionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionTableViewController.swift; sourceTree = "<group>"; };
+		C9FEAE381BD006D3002A52A7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		C9FEAE3A1BD00754002A52A7 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C9FEAE3E1BD02AA7002A52A7 /* AttractionDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionDetailTableViewController.swift; sourceTree = "<group>"; };
+		C9FEAE401BD38B2D002A52A7 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 		C9FEAE061BCF86DC002A52A7 = {
 			isa = PBXGroup;
 			children = (
+				C9E247241BD4291600DC52CD /* README.md */,
 				C9FEAE111BCF86DC002A52A7 /* WDW Explorer */,
 				C9FEAE261BCF86DC002A52A7 /* WDW ExplorerTests */,
 				C9FEAE101BCF86DC002A52A7 /* Products */,
@@ -77,12 +90,17 @@
 		C9FEAE111BCF86DC002A52A7 /* WDW Explorer */ = {
 			isa = PBXGroup;
 			children = (
+				C9FEAE3A1BD00754002A52A7 /* DataManager.swift */,
+				C9FEAE381BD006D3002A52A7 /* SwiftyJSON.swift */,
 				C9FEAE121BCF86DC002A52A7 /* AppDelegate.swift */,
-				C9FEAE141BCF86DC002A52A7 /* ViewController.swift */,
 				C9FEAE161BCF86DC002A52A7 /* Main.storyboard */,
 				C9FEAE191BCF86DC002A52A7 /* Assets.xcassets */,
 				C9FEAE1B1BCF86DC002A52A7 /* LaunchScreen.storyboard */,
 				C9FEAE1E1BCF86DC002A52A7 /* Info.plist */,
+				C9FEAE321BCF8BBE002A52A7 /* AttractionModel.swift */,
+				C9FEAE361BCF8C9A002A52A7 /* AttractionTableViewController.swift */,
+				C9FEAE3E1BD02AA7002A52A7 /* AttractionDetailTableViewController.swift */,
+				C9FEAE401BD38B2D002A52A7 /* NavigationController.swift */,
 			);
 			path = "WDW Explorer";
 			sourceTree = "<group>";
@@ -198,8 +216,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9FEAE151BCF86DC002A52A7 /* ViewController.swift in Sources */,
+				C9FEAE331BCF8BBE002A52A7 /* AttractionModel.swift in Sources */,
+				C9FEAE3B1BD00754002A52A7 /* DataManager.swift in Sources */,
+				C9FEAE371BCF8C9A002A52A7 /* AttractionTableViewController.swift in Sources */,
+				C9FEAE3F1BD02AA7002A52A7 /* AttractionDetailTableViewController.swift in Sources */,
 				C9FEAE131BCF86DC002A52A7 /* AppDelegate.swift in Sources */,
+				C9FEAE411BD38B2D002A52A7 /* NavigationController.swift in Sources */,
+				C9E247251BD4291600DC52CD /* README.md in Sources */,
+				C9FEAE391BD006D3002A52A7 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +413,7 @@
 				C9FEAE2E1BCF86DC002A52A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9FEAE2F1BCF86DC002A52A7 /* Build configuration list for PBXNativeTarget "WDW ExplorerTests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +422,7 @@
 				C9FEAE311BCF86DC002A52A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

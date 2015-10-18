@@ -1,18 +1,19 @@
 //
-//  ViewController.swift
+//  NavigationController.swift
 //  WDW Explorer
 //
-//  Created by Matt on 10/15/15.
+//  Created by Matt on 10/18/15.
 //  Copyright © 2015 Matt Sherman. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class NavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
 }
-
