@@ -19,4 +19,4 @@ Thanks to [Aaron Douglas](https://github.com/astralbodies) for the fantastic int
 
 ## Demo Video
 
-[Demo Video](https://cloudup.com/cg1k8ElEaua)
+[Demo Video](https://cloudup.com/cCUGSbO4AKr)
