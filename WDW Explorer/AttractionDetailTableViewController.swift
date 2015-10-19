@@ -12,10 +12,10 @@ class AttractionDetailTableViewController: UITableViewController {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var parkLabel: UILabel!
     @IBOutlet var openedOnLabel: UILabel!
-    @IBOutlet var notToBeMissedLabel: UILabel!
+    @IBOutlet var notToBeMissedCell: UITableViewCell!
     @IBOutlet var durationLabel: UILabel!
-    @IBOutlet var extraMagicHoursMorning: UILabel!
-    @IBOutlet var extraMagicHoursEvening: UILabel!
+    @IBOutlet var extraMagicHoursMorningCell: UITableViewCell!
+    @IBOutlet var extraMagicHoursEveningCell: UITableViewCell!
     
     var attraction: AttractionModel?
     
@@ -59,17 +59,26 @@ class AttractionDetailTableViewController: UITableViewController {
                 self.openedOnLabel.text = self.dateFormatter.stringFromDate(attraction.openedOn!)
                 self.openedOnLabel.hidden = false
                 
-                self.notToBeMissedLabel.text = attraction.notToBeMissed?.description
-                self.notToBeMissedLabel.hidden = false
+                if let notToBeMissed = attraction.notToBeMissed {
+                    if notToBeMissed {
+                        self.notToBeMissedCell.accessoryType = .Checkmark
+                    }
+                }
                 
                 self.durationLabel.text = self.dateComponentsFormatter.stringFromTimeInterval(attraction.duration!)
                 self.durationLabel.hidden = false
                 
-                self.extraMagicHoursMorning.text = attraction.openExtraMagicHoursMorning?.description
-                self.extraMagicHoursMorning.hidden = false
+                if let openExtraMagicHoursMorning = attraction.openExtraMagicHoursMorning {
+                    if openExtraMagicHoursMorning {
+                        self.extraMagicHoursMorningCell.accessoryType = .Checkmark
+                    }
+                }
                 
-                self.extraMagicHoursEvening.text = attraction.openExtraMagicHoursEvening?.description
-                self.extraMagicHoursEvening.hidden = false
+                if let openExtraMagicHoursEvening = attraction.openExtraMagicHoursEvening {
+                    if openExtraMagicHoursEvening {
+                        self.extraMagicHoursEveningCell.accessoryType = .Checkmark
+                    }
+                }
             }
             
             return

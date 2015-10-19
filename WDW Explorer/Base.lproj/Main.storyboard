@@ -266,10 +266,10 @@
                     </tableView>
                     <connections>
                         <outlet property="durationLabel" destination="6pz-3a-EuL" id="Q8T-ZG-gEo"/>
-                        <outlet property="extraMagicHoursEvening" destination="Zlh-Ni-nB7" id="Vmb-2Y-fLc"/>
-                        <outlet property="extraMagicHoursMorning" destination="0Yc-zt-49o" id="tcH-y8-cWM"/>
+                        <outlet property="extraMagicHoursEveningCell" destination="E2P-JH-P4E" id="UJU-so-OQu"/>
+                        <outlet property="extraMagicHoursMorningCell" destination="xAB-e2-piL" id="MIk-6u-72p"/>
                         <outlet property="nameLabel" destination="DCv-5N-RKR" id="Ifa-u8-ExI"/>
-                        <outlet property="notToBeMissedLabel" destination="Fst-YE-Vgz" id="tnj-dk-doY"/>
+                        <outlet property="notToBeMissedCell" destination="b5y-uT-Pjb" id="NPN-yh-LeK"/>
                         <outlet property="openedOnLabel" destination="Fe8-kc-b5r" id="k7m-XP-giJ"/>
                         <outlet property="parkLabel" destination="pf2-C7-mEC" id="8Lq-Sw-L0W"/>
                     </connections>
