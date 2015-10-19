@@ -9,8 +9,6 @@
 import UIKit
 
 class AttractionDetailTableViewController: UITableViewController {
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var parkLabel: UILabel!
     @IBOutlet var openedOnLabel: UILabel!
     @IBOutlet var notToBeMissedCell: UITableViewCell!
     @IBOutlet var durationLabel: UILabel!
@@ -56,12 +54,7 @@ class AttractionDetailTableViewController: UITableViewController {
         dispatch_async(dispatch_get_main_queue(), {
             if let attraction = self.attraction {
                 self.title = attraction.name
-                
-                self.nameLabel.text = attraction.name
-                self.nameLabel.hidden = false
-                
-                self.parkLabel.text = self.parkNames[attraction.park]
-                self.parkLabel.hidden = false
+                self.navigationItem.prompt = self.parkNames[attraction.park]
                 
                 if let openedOn = attraction.openedOn {
                     self.openedOnLabel.text = self.dateFormatter.stringFromDate(openedOn)
