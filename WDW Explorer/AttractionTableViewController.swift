@@ -120,8 +120,6 @@ class AttractionTableViewController: UITableViewController, UISearchResultsUpdat
                 let scopeIndex = searchController.searchBar.selectedScopeButtonIndex
                 
                 if scopeIndex > 0 {
-                    print(attraction.park)
-                    print(parks[scopeIndex])
                     parkMatch = attraction.park == parks[scopeIndex]
                 }
                 

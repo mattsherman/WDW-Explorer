@@ -14,7 +14,7 @@
                         <animations/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="j26-Jd-Zn4" style="IBUITableViewCellStyleDefault" id="pTg-Wa-b9E">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="122" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pTg-Wa-b9E" id="bup-B9-rfK">
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
