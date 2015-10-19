@@ -51,12 +51,25 @@ class AttractionDetailTableViewController: UITableViewController {
                 self.title = attraction.name
                 
                 self.nameLabel.text = attraction.name
+                self.nameLabel.hidden = false
+                
                 self.parkLabel.text = attraction.park
+                self.parkLabel.hidden = false
+                
                 self.openedOnLabel.text = self.dateFormatter.stringFromDate(attraction.openedOn!)
+                self.openedOnLabel.hidden = false
+                
                 self.notToBeMissedLabel.text = attraction.notToBeMissed?.description
+                self.notToBeMissedLabel.hidden = false
+                
                 self.durationLabel.text = self.dateComponentsFormatter.stringFromTimeInterval(attraction.duration!)
+                self.durationLabel.hidden = false
+                
                 self.extraMagicHoursMorning.text = attraction.openExtraMagicHoursMorning?.description
+                self.extraMagicHoursMorning.hidden = false
+                
                 self.extraMagicHoursEvening.text = attraction.openExtraMagicHoursEvening?.description
+                self.extraMagicHoursEvening.hidden = false
             }
             
             return
