@@ -23,6 +23,13 @@ class AttractionDetailTableViewController: UITableViewController {
     let numberFormatter = NSNumberFormatter()
     let dateComponentsFormatter = NSDateComponentsFormatter()
     
+    let parkNames = [
+        "magic-kingdom": "Magic Kingdom",
+        "epcot": "Epcot",
+        "hollywood-studios": "Hollywood Studios",
+        "animal-kingdom": "Animal Kingdom"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,7 +60,7 @@ class AttractionDetailTableViewController: UITableViewController {
                 self.nameLabel.text = attraction.name
                 self.nameLabel.hidden = false
                 
-                self.parkLabel.text = attraction.park
+                self.parkLabel.text = self.parkNames[attraction.park]
                 self.parkLabel.hidden = false
                 
                 self.openedOnLabel.text = self.dateFormatter.stringFromDate(attraction.openedOn!)
