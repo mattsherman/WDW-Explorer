@@ -10,16 +10,16 @@ import Foundation
 
 struct AttractionModel {
     // core
-    let name: String
-    let shortName: String
-    let permalink: String
-    let park: String // TODO: make enum
+    var name: String
+    var shortName: String
+    var permalink: String
+    var park: String // TODO: make enum
     // details
-    let openedOn: NSDate?
-    let notToBeMissed: Bool?
-    let duration: NSTimeInterval?
-    let openExtraMagicHoursMorning: Bool?
-    let openExtraMagicHoursEvening: Bool?
+    var openedOn: NSDate?
+    var notToBeMissed: Bool?
+    var duration: NSTimeInterval?
+    var openExtraMagicHoursMorning: Bool?
+    var openExtraMagicHoursEvening: Bool?
     
     // TODO: is there a way to avoid having to define init?
     init(name: String, shortName: String, permalink: String, park: String, openedOn: NSDate? = nil, notToBeMissed: Bool? = nil, duration: NSTimeInterval? = nil, openExtraMagicHoursMorning: Bool? = nil, openExtraMagicHoursEvening: Bool? = nil) {

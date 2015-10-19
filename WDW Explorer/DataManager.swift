@@ -79,17 +79,32 @@ class DataManager {
         
         let json = JSON(data: data)
         
-        let attraction = AttractionModel(
+        var attraction = AttractionModel(
             name: json["name"].string!,
             shortName: json["short_name"].string!,
             permalink: permalink,
-            park: park,
-            openedOn: dateFormatter.dateFromString(json["opened_on"].string!),
-            notToBeMissed: json["not_to_be_missed"].bool!,
-            duration: NSTimeInterval(json["duration"].number!.doubleValue * 60),
-            openExtraMagicHoursMorning: json["open_emh_morning"].bool!,
-            openExtraMagicHoursEvening: json["open_emh_evening"].bool!
+            park: park
         )
+        
+        if let openedOn = json["opened_on"].string {
+            attraction.openedOn = dateFormatter.dateFromString(openedOn)
+        }
+        
+        if let notToBeMissed = json["not_to_be_missed"].bool {
+            attraction.notToBeMissed = notToBeMissed
+        }
+        
+        if let duration = json["duration"].number {
+            attraction.duration = NSTimeInterval(duration.doubleValue * 60)
+        }
+        
+        if let openExtraMagicHoursMorning = json["open_emh_morning"].bool {
+            attraction.openExtraMagicHoursMorning = openExtraMagicHoursMorning
+        }
+        
+        if let openExtraMagicHoursEvening = json["open_emh_evening"].bool {
+            attraction.openExtraMagicHoursEvening = openExtraMagicHoursEvening
+        }
         
         return attraction
     }

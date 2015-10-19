@@ -63,8 +63,10 @@ class AttractionDetailTableViewController: UITableViewController {
                 self.parkLabel.text = self.parkNames[attraction.park]
                 self.parkLabel.hidden = false
                 
-                self.openedOnLabel.text = self.dateFormatter.stringFromDate(attraction.openedOn!)
-                self.openedOnLabel.hidden = false
+                if let openedOn = attraction.openedOn {
+                    self.openedOnLabel.text = self.dateFormatter.stringFromDate(openedOn)
+                    self.openedOnLabel.hidden = false
+                }
                 
                 if let notToBeMissed = attraction.notToBeMissed {
                     if notToBeMissed {
@@ -72,8 +74,11 @@ class AttractionDetailTableViewController: UITableViewController {
                     }
                 }
                 
-                self.durationLabel.text = self.dateComponentsFormatter.stringFromTimeInterval(attraction.duration!)
-                self.durationLabel.hidden = false
+                if let duration = attraction.duration {
+                    self.durationLabel.text = self.dateComponentsFormatter.stringFromTimeInterval(duration)
+                    self.durationLabel.hidden = false
+                }
+
                 
                 if let openExtraMagicHoursMorning = attraction.openExtraMagicHoursMorning {
                     if openExtraMagicHoursMorning {
